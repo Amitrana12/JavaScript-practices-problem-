@@ -1,0 +1,1 @@
+console.log("welocme to my fist program in javascript by AMit rana(*_*)")
