@@ -1,0 +1,96 @@
+
+<!doctype html>
+<head>
+  <meta charset="UTF-8">
+  <title>
+      CodePen - Demo Flexbox 3
+  </title>
+  <style>
+    body{padding: 2em;}
+
+   .headerContainer{
+       display: flex;
+       flex-flow: column wrap;
+       align-content: center;
+       background: tomato;
+       font-weight: bold;
+       padding: 1opx;
+   }
+
+   .footerContainer{
+       display: flex;
+       flex-flow: column wrap;
+       align-content: center;
+       background: lightgreen;
+       font-weight: bold;
+       padding: 1opx;
+   }
+
+   .mainContainer{
+       display: flex;
+       flex-flow: row wrap;
+       text-align: center;
+       font-weight: bold;
+       
+   }
+                                                 
+ .mainContentItem{
+     text-align: left;
+     background: deepskyblue;
+ }
+
+article{
+   padding: 10px;
+   margin: 10px;
+   background: aqua;
+}
+
+  .sideBarLeftItem{ background: gold;}
+  .sideBarRightItem{background: hotpink;}
+  .sideBarItem{ flex: 1 0 0; border:0px solid green;}
+  .mainContentItem{flex: 3 0px;}
+  .sideBarLeftItem{ order:1;}
+  .sideBarRightItem{ order:3;}
+  .mainContentItem{order:2;}
+  </style>
+</head><link rel="stylesheet" href="Day 36\css\website.css">
+<body>
+    <nav class="col-1">Nav</nav>
+    <div class="col-2">
+        <header>Header</header>
+      <main class="content">
+        <div class="mainContainer">
+          <section class="mainContentItem">
+          <article>
+              <h2>
+                  First article
+              </h2>
+              <p>Google Chrome is a web browser developed by Google, released in 2008. Chrome is the world's most popular web browser today!</p>
+          </article>
+    
+          <article>
+           <h2>
+               First article
+           </h2>
+           <p>Google Chrome is a web browser developed by Google, released in 2008. Chrome is the world's most popular web browser today!</p>
+       </article>
+       <article>
+           <h2>
+               First article
+           </h2>
+           <p>Google Chrome is a web browser developed by Google, released in 2008. Chrome is the world's most popular web browser today!</p>
+       </article>
+    
+          </section>
+          <sideBar class="sideBarItem sideBarLeftItem"><div class="center"><p>Left Side Bar</p></div></sideBar>
+          <sideBar class="sideBarItem sideBarRightItem"><div class="center"><p>Right Side Bar</p></div></sideBar>
+     
+       </div>
+         
+      <article>Article</article>
+      <aside>Aside</aside>
+      </main>
+        <footer>Footer</footer>
+    </div>
+  </body>
+</html>
