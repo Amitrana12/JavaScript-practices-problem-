@@ -85,8 +85,9 @@ set email(email){
 console.log("Welcome to my Address book by [AMIT RANA] \n-------------------------\n");
 let arry=[];
 try{
+    //adding new contact into address book by creatting arry
 arry[0]=new Address("Amit","Rana", "Awas vikas", "rishikesh", "UK", 247615, 8979325434, "amirana14325@gmail.com");
-//arry[1]=new Address("Sumit","Sewal", "vikas", "rishikesh", "UK", 247615, 8979325434, "sumit@gmail.com");
+arry[1]=new Address("Sumit","Sewal", "vikas", "rishikesh", "UK", 247615, 8979325434, "sumit@gmail.com");
 arry.forEach(function(data){
 console.log("---------------------\n"+data.getDetails());
 });}
