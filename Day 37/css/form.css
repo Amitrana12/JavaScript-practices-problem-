@@ -1,0 +1,75 @@
+*{
+    margin:0;
+    padding :0;
+
+}
+.headerContainer{
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;
+    background: tomato;
+    font-weight: bold;
+    margin-left: 90px;
+    margin-right: 90px;
+    padding: 20px;
+}
+ 
+form{
+    margin-top: 50px;
+    margin-left: 90px;
+    margin-right: 150px;
+    padding-left: 100px;
+    padding-left: 100px;
+}
+ 
+div{
+    margin-top: 30px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+ 
+label, input, button{
+    font-size: 16px;
+    line-height: 1.5;
+    
+}
+ 
+label{
+    text-align: right;
+    width: 30%;
+    margin-right: 2%;
+}
+ 
+input{
+    flex:auto;
+    padding :0px;
+    margin-right: 100px;
+    
+}
+
+ button{
+    align-items: center;
+    height: 50px;
+    width: 100px;
+    padding: 10px 15px;
+    margin-left: 500px;
+} 
+ 
+error-output{
+    font-size: 12px;
+    font-style: italic;
+    color: red;
+}
+ 
+@media screen and (max-width:600px){
+    h1{
+        font-size: 40px;
+        text-align: right;
+    }
+    label{
+        width: 40%;
+        font-size: 14px;
+    }
+}
